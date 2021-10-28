@@ -1,5 +1,5 @@
 % Octave Script
-% Title                  :funcion real de variable real
+% Title                  :funcion real de variable real f1
 % Description            :Script para recordar funcion real de variable real
 % Author                 :Magali Valencia Clemente
 % Date                   :20211026
@@ -11,11 +11,10 @@
 
 clear
 % crear rango de valores
-primer_operacion 'x'
-x=-50:1:50;
+x=10:0.1:500
 % calcular los valores 
-y= (1)+ ezplot(sqrt(x-4)):
-plot( x,y);
-
+fx=(1)+((x-4).^(1/2))
+% funcion a plotear
+plot( x,fx);
 
 
