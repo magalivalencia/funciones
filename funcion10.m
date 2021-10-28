@@ -7,10 +7,12 @@
 % Usage                  :C:\Users\magali
 %                        :octave>funcion real de variable real
 
-clear
-function
-x=-10:0.01:10;
-% expresar la funcion
-f=@(x) (sqrt(x)).*(0<= x <= 1)+(2-x).*(1<x<=2);
-
-ploat(x, f);
+% graficar la siguiente funcion si f:D --> i | f(x)=(sqrt=0 si 0<=x<=1)(2-x si 1<x<=2)
+f=@(x)(x).*(0<=x).*(x<=1)+(2-x).*(1<x).*(x<=2);
+f(-1)
+f(5)
+f(6)
+% estudia la continuidad f
+f(3)
+f(5)
+fplot(@(x)(x).*(0<=x).*(x<=1)+(2-x).*(1<x).*(x<=2),[0,2]);
