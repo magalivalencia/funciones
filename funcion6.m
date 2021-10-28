@@ -6,14 +6,14 @@
 % Version                :1
 % Usage                  :C:\Users\magali
 %                        :octave>funcion real de variable real
+
 clear
 % graficar la siguiente funcion h(t)=(t-1)/(t-2)
 
 % crear rango de valores
-x=-50:1:50;
+t=-50:0.1:50;
 % calcular los funcion
-y=@(t) ( t-1)./(t-2);
-
+ht=(t-1)./(t-2);
 % realizar la grafica
-plot(x, y)
+plot(t, ht);
 grind on
