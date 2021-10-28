@@ -10,9 +10,9 @@
 clear
 % graficar la siguiente funcion h(t)=(t)/(2-t)
 % crear rango de valores
-x=(-50:1:50);
+t=-50:1:500;
 % calcular los funcion
-f=@(t) t/(2-t);
+ft=(t)./(2-t);
 
 % realizar la grafica
-plot(x,f );
+plot(t, ft );
