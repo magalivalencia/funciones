@@ -1,5 +1,5 @@
 % Octave Script
-% Title                  :funcion real de variable real
+% Title                  :funcion real de variable real f2
 % Description            :Script para recordar funcion real de variable real
 % Author                 :Magali Valencia Clemente
 % Date                   :20211026
@@ -13,6 +13,6 @@ clear
 % crear rango de valores
 x=-100:1:100;
 % calcular los funcion
-y=(1)+(x.^2);
+fx=((1)+(x.^2));
 % realizar la grafica
-plot(x, y)
+plot(x, fx);
