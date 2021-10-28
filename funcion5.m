@@ -1,5 +1,5 @@
 % Octave Script
-% Title                  :funcion real de variable real
+% Title                  :funcion real de variable real f5
 % Description            :Script para recordar funcion real de variable real
 % Author                 :Magali Valencia Clemente
 % Date                   :20211026
@@ -10,10 +10,9 @@
 clear
 % graficar la siguiente funcion g(z)=|Z^3|
 % crear rango de valores
-x=-50:1:50;
+z=-50:0.1:50;
 % calcular los funcion
-y= '|Z.^3|';
-y=@(z)  (1.^3);
+gz=(abs(z).^3);
 
 % realizar la grafica
-plot(x,y);
+plot(z, gz);
