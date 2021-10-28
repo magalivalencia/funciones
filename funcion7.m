@@ -12,7 +12,7 @@ clear
 % crear rango de valores
 x=-10:1:10;
 % calcular los funcion
-y=(2*x.^2+ 3*x)/(x.^2+4*x+5);
+y=(2*x.^2+ 3*x)./(x.^2+4*x+5);
 
 % realizar la grafica
 plot(x, y);
